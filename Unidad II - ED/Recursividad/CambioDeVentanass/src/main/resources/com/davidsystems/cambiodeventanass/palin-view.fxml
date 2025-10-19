@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container -->
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.davidsystems.cambiodeventanass.controller.PalinController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="Palindrome Checker" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <!-- Input for the word -->
+    <TextField fx:id="txtWord" promptText="Enter a word" maxWidth="250"/>
+
+    <!-- Button to check if the word is a palindrome -->
+    <Button text="Check Word" onAction="#checkPalindrome"/>
+
+    <!-- Label to display result -->
+    <Label fx:id="lblResult" style="-fx-font-size: 14; -fx-text-fill: darkblue;"/>
+</VBox>

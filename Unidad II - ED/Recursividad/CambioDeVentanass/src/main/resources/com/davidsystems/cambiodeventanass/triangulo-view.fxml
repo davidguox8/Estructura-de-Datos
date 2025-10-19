@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container -->
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.davidsystems.cambiodeventanass.controller.TrianguloController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="Triangle Generator" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <!-- Input for triangle size -->
+    <TextField fx:id="txtSize" promptText="Enter triangle size" maxWidth="200"/>
+
+    <!-- ChoiceBox to select type of triangle -->
+    <ChoiceBox fx:id="choiceType" maxWidth="200">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Creciente"/>
+                <String fx:value="Decreciente"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <!-- Button to generate triangle -->
+    <Button text="Generate Triangle" onAction="#generateTriangle"/>
+
+    <!-- TextArea to display result -->
+    <TextArea fx:id="txtResult" prefRowCount="10" prefColumnCount="20" editable="false" wrapText="true"/>
+</VBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container -->
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.davidsystems.cambiodeventanass.controller.FibonacciController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="Fibonacci Calculator" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <!-- Input for number -->
+    <TextField fx:id="txtNumber" promptText="Enter a number" maxWidth="200"/>
+
+    <!-- Button to calculate Fibonacci -->
+    <Button text="Calculate Fibonacci" onAction="#calculateFibonacci"/>
+
+    <!-- Labels to display results from the three solutions -->
+    <Label fx:id="lblResult1" text="Solution 1: " style="-fx-font-size: 14; -fx-text-fill: blue;"/>
+    <Label fx:id="lblResult2" text="Solution 2: " style="-fx-font-size: 14; -fx-text-fill: green;"/>
+    <Label fx:id="lblResult3" text="Solution 3: " style="-fx-font-size: 14; -fx-text-fill: purple;"/>
+</VBox>

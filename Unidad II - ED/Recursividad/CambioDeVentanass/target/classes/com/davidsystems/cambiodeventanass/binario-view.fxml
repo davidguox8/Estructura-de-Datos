@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container -->
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.davidsystems.cambiodeventanass.controller.BinarioController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="Decimal to Binary Converter" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <!-- Input field for the number -->
+    <TextField fx:id="txtNumber" promptText="Enter a number" maxWidth="200"/>
+
+    <!-- Button to perform the conversion -->
+    <Button text="Convert to Binary" onAction="#convertToBinary"/>
+
+    <!-- Results -->
+    <Label text="Solution 1 (Print):" style="-fx-font-weight: bold;"/>
+    <Label fx:id="lblSolution1" style="-fx-font-size: 14; -fx-text-fill: darkblue;"/>
+
+    <Label text="Solution 2 (Return):" style="-fx-font-weight: bold;"/>
+    <Label fx:id="lblSolution2" style="-fx-font-size: 14; -fx-text-fill: darkgreen;"/>
+</VBox>

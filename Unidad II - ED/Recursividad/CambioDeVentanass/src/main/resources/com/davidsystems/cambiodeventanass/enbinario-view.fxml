@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container -->
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.davidsystems.cambiodeventanass.controller.EnbinarioController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="Binary Number Checker" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <!-- Input field for the number -->
+    <TextField fx:id="txtNumber" promptText="Enter a number" maxWidth="200"/>
+
+    <!-- Button to check if the number is binary -->
+    <Button text="Check Number" onAction="#checkIfBinary"/>
+
+    <!-- Label to display the result -->
+    <Label fx:id="lblResult" style="-fx-font-size: 14; -fx-text-fill: darkblue;"/>
+</VBox>
+

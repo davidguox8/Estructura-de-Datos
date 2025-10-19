@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.davidsystems.cambiodeventanass.controller.VentanaPrincipalController">
+    <children>
+        <Label layoutX="231.0" layoutY="14.0" text="MENU OF RECURSION"/>
+        <Button layoutX="33.0" layoutY="57.0" mnemonicParsing="false" onAction="#onSegundaVentana" prefHeight="26.0"
+                prefWidth="114.0" text="Binary numbers"/>
+        <Button layoutX="33.0" layoutY="295.0" mnemonicParsing="false" onAction="#onTerceraVentana" prefHeight="26.0"
+                prefWidth="114.0" text="decrement number"/>
+        <Button layoutX="33.0" layoutY="247.0" mnemonicParsing="false" onAction="#onCuarteVentana" prefHeight="26.0"
+                prefWidth="114.0" text="Binary Number Checker5!"/>
+        <Button layoutX="33.0" layoutY="200.0" mnemonicParsing="false" onAction="#onQuintaVentana" prefHeight="26.0"
+                prefWidth="114.0" text="Factorial Number"/>
+        <Button layoutX="33.0" layoutY="103.0" mnemonicParsing="false" onAction="#onSextaVentana" prefHeight="26.0"
+                prefWidth="114.0" text="Fibonacci sequence"/>
+        <Button layoutX="33.0" layoutY="152.0" mnemonicParsing="false" onAction="#onSeptimaVentana" prefHeight="26.0"
+                prefWidth="114.0" text="increment number"/>
+        <Button layoutX="201.0" layoutY="57.0" mnemonicParsing="false" onAction="#onOctavaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Inverted sequence of numbers"/>
+        <Button layoutX="201.0" layoutY="247.0" mnemonicParsing="false" onAction="#onNovenaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Order of numbers"/>
+        <Button layoutX="201.0" layoutY="103.0" mnemonicParsing="false" onAction="#onDecimaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Palindrome Checker! "/>
+        <Button layoutX="201.0" layoutY="152.0" mnemonicParsing="false" onAction="#onOnceabaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Potence of Numbers "/>
+        <Button layoutX="201.0" layoutY="200.0" mnemonicParsing="false" onAction="#onDoceabaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Area of rectangles "/>
+        <Button layoutX="201.0" layoutY="200.0" mnemonicParsing="false" onAction="#onTerceabaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Recursion Example - Factorial "/>
+        <Button layoutX="201.0" layoutY="200.0" mnemonicParsing="false" onAction="#onCatorceabaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Recursive Sum "/>
+        <Button layoutX="201.0" layoutY="200.0" mnemonicParsing="false" onAction="#onQuintiabaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Area of Triangle "/>
+        <Button layoutX="201.0" layoutY="200.0" mnemonicParsing="false" onAction="#onDiesiseciabaVentana" prefHeight="26.0"
+                prefWidth="150.0" text="Digit Counter "/>
+    </children>
+</AnchorPane>

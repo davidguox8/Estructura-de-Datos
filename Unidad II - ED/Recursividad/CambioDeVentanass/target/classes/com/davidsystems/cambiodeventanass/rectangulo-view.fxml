@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container -->
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.davidsystems.cambiodeventanass.controller.RectanguloController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="Rectangle Printer" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <!-- Input fields for height and width -->
+    <TextField fx:id="txtHeight" promptText="Enter height" maxWidth="200"/>
+    <TextField fx:id="txtWidth" promptText="Enter width" maxWidth="200"/>
+
+    <!-- Button to generate rectangle -->
+    <Button text="Print Rectangle" onAction="#printRectangle"/>
+
+    <!-- TextArea to display result -->
+    <TextArea fx:id="txtResult" prefRowCount="10" prefColumnCount="20" editable="false" wrapText="true"/>
+</VBox>

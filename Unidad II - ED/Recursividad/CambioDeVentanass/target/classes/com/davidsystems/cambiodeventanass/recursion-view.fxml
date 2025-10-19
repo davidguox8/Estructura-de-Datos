@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.davidsystems.cambiodeventanass.controller.RecursionController"
+            prefWidth="400" prefHeight="250">
+
+    <children>
+        <Label layoutX="30" layoutY="30" text="Enter a number:"/>
+        <TextField fx:id="inputNumber" layoutX="150" layoutY="25" prefWidth="200"/>
+
+        <Button fx:id="calculateButton"
+                text="Calculate Factorial"
+                layoutX="120" layoutY="80"
+                onAction="#onCalculateClick"/>
+
+        <Label fx:id="resultLabel"
+               layoutX="100" layoutY="150"
+               text="Result will appear here"
+               style="-fx-font-size: 14px; -fx-text-fill: blue;"/>
+    </children>
+</AnchorPane>
