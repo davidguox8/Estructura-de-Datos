@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  FXML view for Queue Exercise.
+  Vista FXML para el ejercicio de Fila (Cola).
+-->
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.davidsystems.reporteprac.controller.QueueExerciseController"
+            prefWidth="400" prefHeight="300">
+
+    <children>
+        <Label layoutX="130" layoutY="20" text="Queue Example / Ejemplo de Fila" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <TextField fx:id="txtElement" layoutX="80" layoutY="70" prefWidth="240" promptText="Enter element / Ingresa un elemento"/>
+
+        <Button layoutX="80" layoutY="110" text="Enqueue (Agregar)" onAction="#onEnqueue"/>
+        <Button layoutX="220" layoutY="110" text="Dequeue (Eliminar)" onAction="#onDequeue"/>
+
+        <Label layoutX="80" layoutY="160" text="Queue Content / Contenido de la Fila:"/>
+        <ListView fx:id="listViewQueue" layoutX="80" layoutY="190" prefWidth="240" prefHeight="80"/>
+    </children>
+</AnchorPane>
